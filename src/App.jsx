@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 function App() {
   return (
@@ -7,8 +8,8 @@ function App() {
       <h1> Contacts Crud </h1>
       
 
-    <table class="table table-striped">
-        <thead class="thead-dark">
+    <table className="table table-striped">
+        <thead className="thead-dark">
           <tr>
           <th scope="col">ID</th>
             <th scope="col">Name</th>
@@ -52,5 +53,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
