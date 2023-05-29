@@ -5,3 +5,16 @@ h1{
 #container{
   margin-top: 3rem;
 }
+
+label, input{
+  margin-top: 10px;
+  
+}
+
+label{
+  font-size: 1.5rem;
+}
+
+input{
+  width: 200px;
+}

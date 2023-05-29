@@ -17,10 +17,17 @@ function MyModal() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Meu Modal</Modal.Title>
+          <Modal.Title>Add a new contact to the list</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <p>Conteúdo do modal.</p>
+        <Modal.Body className="text-center">
+          <label htmlFor="name">Name:</label><br />
+          <input type="text" id='name'/> <br />
+          <label htmlFor="phoneNumber">Phone number:</label> <br />
+          <input type="tel" id="phoneNumber" /> <br />
+          <label htmlFor="birthday">Birthday:</label> <br />
+          <input type="date" id="birthday" /> <br />
+          <label htmlFor="profession">Profession</label> <br />
+          <input type="text" id="profession" />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
