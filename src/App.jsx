@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Button, Modal } from 'react-bootstrap';
+import deleteImage from './img/excluir.png'
+import editImage from './img/editar.png'
 
 function MyModal() {
   const [show, setShow] = React.useState(false);
@@ -68,12 +70,12 @@ function App() {
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>   
-            <td> </td>
-            <td> </td> 
+            <td> Chris Bumstead </td>
+            <td> (99)9999-9999 </td>
+            <td> 22/07/1993 </td>
+            <td> Bodybuilder </td>   
+            <td> <img src={editImage} style={{height:"40px"}} alt="Edit Icon " /></td>
+            <td> <img src={deleteImage} style={{height:"40px"}} alt="Delete icon" /> </td> 
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -81,8 +83,8 @@ function App() {
             <td> </td>
             <td> </td>
             <td> </td>
-            <td> </td>
-            <td> </td> 
+            <td> <img src={editImage} style={{height:"40px"}} alt="Edit Icon " /></td>
+            <td> <img src={deleteImage} style={{height:"40px"}} alt="Delete icon" /> </td> 
           </tr>
           <tr>
             <th scope="row">3</th>
@@ -90,8 +92,8 @@ function App() {
             <td> </td>
             <td> </td>
             <td> </td>
-            <td> </td>
-            <td> </td> 
+            <td> <img src={editImage} style={{height:"40px"}} alt="Edit Icon " /></td>
+            <td> <img src={deleteImage} style={{height:"40px"}} alt="Delete icon" /> </td> 
           </tr>
         </tbody>
       </table>
