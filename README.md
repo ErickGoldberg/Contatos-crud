@@ -3,7 +3,7 @@ Projeto com intuito de aprender integração entre React.js com .NET e SQL Serve
 
 ## Tasks(status):
 
-- Front-end (Doing)
-- Database (to do)
+- Front-end (Done)
+- Database (Doing)
 - Back-end (to do)
 - Integration (to do)
