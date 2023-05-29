@@ -2,6 +2,14 @@ h1{
   display: flex;
   justify-content: center;
 }
+.modalButton, .btn{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#secondButton{
+  margin-left: 10px;
+}
 #container{
   margin-top: 3rem;
 }

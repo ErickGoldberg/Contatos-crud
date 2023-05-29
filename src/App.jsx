@@ -10,8 +10,8 @@ function MyModal() {
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
+    <div className="d-flex justify-content-center">
+      <Button variant="primary" onClick={handleShow} className="modalButton">
         New contact
       </Button>
 
@@ -21,13 +21,13 @@ function MyModal() {
         </Modal.Header>
         <Modal.Body className="text-center">
           <label htmlFor="name">Name:</label><br />
-          <input type="text" id='name'/> <br />
+          <input type="text" id='name' pattern="^[a-zA-Z]+$" title="Por favor, insira apenas letras."/> <br />
           <label htmlFor="phoneNumber">Phone number:</label> <br />
           <input type="tel" id="phoneNumber" /> <br />
+          <label htmlFor="profession">Profession</label> <br />
+          <input type="text" id="profession" pattern="^[a-zA-Z]+$" title="Por favor, insira apenas letras."/> <br />
           <label htmlFor="birthday">Birthday:</label> <br />
           <input type="date" id="birthday" /> <br />
-          <label htmlFor="profession">Profession</label> <br />
-          <input type="text" id="profession" />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -38,7 +38,12 @@ function MyModal() {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+
+      <Button variant="primary" className="btn btn-danger" id='secondButton'> 
+        Delete all
+      </Button>
+    </div>
+
   );
 }
 
@@ -46,7 +51,7 @@ function App() {
   return (
     <div id="container">
       <h1>Contacts Crud</h1>
-      <MyModal />
+      <MyModal/>
 
       <table className="table table-striped">
       <thead className="thead-dark">
